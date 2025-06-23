@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills | Arjuna Sri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: #111;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00ffcc;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #00ffcc;
+      text-shadow: 2px 2px 8px rgba(0, 255, 204, 0.4);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00ffcc;
+      margin-bottom: 2rem;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      border: 1px solid #00ffcc33;
+    }
+
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-card h3 {
+      color: #00ffcc;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-wrapper">
+      <img src="arjuna.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Arjuna Sri</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <ul>
+          <li>C</li>
+          <li>Python</li>
+          <li>Java</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>AI & Data Science</h3>
+        <ul>
+          <li>Machine Learning</li>
+          <li>Deep Learning</li>
+          <li>Natural Language Processing (NLP)</li>
+          <li>Data Analysis</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <ul>
+          <li>Frontend: HTML, CSS, JavaScript</li>
+          <li>Backend: Node.js, Flask</li>
+          <li>Database: MySQL, MongoDB</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Blockchain</h3>
+        <ul>
+          <li>Smart Contracts (Ethereum)</li>
+          <li>Blockchain Basics</li>
+          <li>Crypto Development</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Cybersecurity</h3>
+        <ul>
+          <li>Network Security</li>
+          <li>Penetration Testing</li>
+          <li>Cryptography</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Options Trading</h3>
+        <ul>
+          <li>Technical Analysis</li>
+          <li>Risk Management</li>
+          <li>Options Strategies</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arjuna Sri. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

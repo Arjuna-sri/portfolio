@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Arjuna Sri</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      background: #111;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .profile-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #00ffcc;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #00ffcc;
+      text-shadow: 2px 2px 8px rgba(0, 255, 204, 0.4);
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 300;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00ffcc;
+      margin-bottom: 2rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-card {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      border: 1px solid #00ffcc33;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #00ffcc;
+    }
+
+    .project-card p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="profile-wrapper">
+      <img src="arjuna.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Arjuna Sri</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>My Projects</h2>
+    <div class="projects">
+      <!-- Original Projects -->
+      <div class="project-card">
+        <h3>JARVIS AI</h3>
+        <p><a href="https://github.com/Arjuna-sri/Jarvis.git">JARVIS AI</a> smart AI assistant developed in Python that automates tasks, responds to voice commands, and simulates human-like interaction using speech and logic.</p>
+      </div>
+      <div class="project-card">
+        <h3>Heart attack Prediction</h3>
+        <p><a href="https://github.com/Arjuna-sri/Heart-attack-prediction.git">Heart attack prediction</a> machine learning to analyze heart rate data and predict anomalies in heartbeats for early detection of health risks.</p>
+      </div>
+      <div class="project-card">
+        <h3>Liver Cancer Detection</h3>
+        <p>Deep learning project using CNN to detect liver cancer in medical images with improved accuracy, assisting doctors in early diagnosis.</p>
+      </div>
+
+      <!-- 21 Additional Project Cards -->
+      <!-- You can update the names and descriptions later -->
+      <div class="project-card"><h3>Face Detection</h3><p><a href="https://github.com/Arjuna-sri/Face-detection.git">Face Detection</a> technology that identifies and locates human faces in images or videos, commonly used in security, authentication, and image processing applications.</p></div>
+      <div class="project-card"><h3>Moving object detection</h3><p><a href="https://github.com/Arjuna-sri/Moving-object-detecton.git">Moving object detection</a> technique that identifies and tracks moving objects in video or real-time footage, often used in surveillance, security systems, and traffic monitoring.</p></div>
+      <div class="project-card"><h3>Smart attendance</h3><p><a href="https://github.com/Arjuna-sri/Smart-attendance-.git">Smart attendance</a> system that automates attendance tracking using technologies like facial recognition, RFID, or mobile apps, making the process faster and more accurate.</p></div>
+      <div class="project-card"><h3>Emotion detection</h3><p><a href="https://github.com/Arjuna-sri/Emotion-detection.git">Emotion detection</a> system that analyzes facial expressions, voice tone, or text to identify and classify human emotions, often used in customer service, mental health monitoring, and human-computer interaction.</p></div>
+      <div class="project-card"><h3>Webcam</h3><p><a href="https://github.com/Arjuna-sri/webcam.git">Webcam</a> small digital camera typically used for video capture and streaming, commonly integrated into computers or external devices for video conferencing and image capture.</p></div>
+      <div class="project-card"><h3>Whatsapp</h3><p><a href="https://github.com/Arjuna-sri/Whatsapp.git">Whatsapp</a> A tool or application that automates the process of sending WhatsApp messages, allowing users to send pre-defined or scheduled messages to contacts or groups.</p></div>
+      <div class="project-card"><h3>Vehicle count and speed detection</h3><p><a href="https://github.com/Arjuna-sri/Vehicle-count-and-speed-detection-.git">vehicle count and speed detection</a> A system that uses cameras or sensors to count vehicles and measure their speed in real-time, commonly used in traffic monitoring and management.</p></div>
+      <div class="project-card"><h3>QR code generator</h3><p><a href="https://github.com/Arjuna-sri/QR-code-generator.git">QR code generator</a> tool that creates scannable QR codes from text, URLs, or other data, enabling quick access to information through smartphones or QR code readers.</p></div>
+      <div class="project-card"><h3>Youtube video downloader</h3><p><a href="https://github.com/Arjuna-sri/Youtube-video-download.git">Youtube video downloader</a> tool or application that allows users to download videos from YouTube, enabling offline viewing in various formats.</p></div>
+      <div class="project-card"><h3>Hostel Management system</h3><p><a href="https://github.com/Arjuna-sri/Hostel-management-system.git">Hostel management syatem</a> A software solution that streamlines the management of hostel operations, including room allocation, student registration, fee management, and maintenance tracking.</p></div>
+      <div class="project-card"><h3>Object detection</h3><p><a href="https://github.com/Arjuna-sri/Object-detection.git">Object detection</a> technique that uses deep learning models to identify and locate objects in images or videos, enabling applications like surveillance, autonomous vehicles, and image classification.</p></div>
+      <div class="project-card"><h3>Spam mail detection</h3><p><a href="https://github.com/Arjuna-sri/Spam-mail-detection.git">Spam mail detection</a> system that uses machine learning algorithms to classify and filter out spam emails from legitimate ones, improving email management and security..</p></div>
+      <div class="project-card"><h3>Virtual calculator</h3><p><a href="https://github.com/Arjuna-sri/Virtual-calculator.git">Virtual calculator</a> software-based calculator that performs basic arithmetic operations, allowing users to input and compute calculations on a digital interface.</p></div>
+      <div class="project-card"><h3>DHT11</h3><p><a href="https://github.com/Arjuna-sri/DHT11.git">DHT11</a> basic digital sensor that measures temperature and humidity, commonly used in weather monitoring and home automation projects.</p></div>
+      <div class="project-card"><h3>Soil sensor</h3><p><a href="https://github.com/Arjuna-sri/Soil-sensor.git">Soil sensor</a> sensor that measures soil properties like moisture, temperature, and nutrients to monitor and manage soil health.</p></div>
+      <div class="project-card"><h3>Serial peripheral interface</h3><p><a href="https://github.com/Arjuna-sri/Serial-Peripheral-Interface.git">Serial peripheral interface</a> communication protocol used to transfer data between microcontrollers and peripherals like sensors or displays at high speed.</p></div>
+      <div class="project-card"><h3>Ultrasonic sensor</h3><p><a href="https://github.com/Arjuna-sri/Ultrasonic-sensor.git">Ultrasonic sensor</a> sensor that uses ultrasonic sound waves to measure distance to an object, commonly used in obstacle detection and distance measurement.</p></div>
+      <div class="project-card"><h3>Bluetooth sensor</h3><p><a href="https://github.com/Arjuna-sri/Bluetooth-sensor.git">Bluetooth sensor</a> device that wirelessly sends data using Bluetooth for short-range communication.</p></div>
+      <div class="project-card"><h3>Hand gasture</h3><p><a href="https://github.com/Arjuna-sri/Hand-gesture.git">Hand gesture</a> vision-based system that detects and recognizes basic hand gestures using a camera, enabling simple and intuitive user interaction.</p></div>
+      
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Arjuna Sri. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
