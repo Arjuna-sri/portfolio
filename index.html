@@ -1,153 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arjuna Sri | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Arjuna Sri | Portfolio</title>
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #0f0f0f;
-      color: #ffffff;
-      line-height: 1.6;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
 
-    header {
-      background: #111;
-      padding: 1.5rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    header h1 {
-      font-size: 1.5rem;
-      color: #00ffcc;
-      text-shadow: 2px 2px 8px rgba(0, 255, 204, 0.4);
-    }
+body {
+    font-family: "Poppins", sans-serif;
+    background: #04372b; /* jet black */
+    color: #F2F2F2;
+    line-height: 1.7;
+}
 
-    nav a {
-      margin-left: 1.5rem;
-      color: #fff;
-      text-decoration: none;
-      font-weight: 300;
-      transition: color 0.3s ease;
-    }
+/* HEADER */
+header {
+    background: #04372b;
+    border-bottom: 1px solid #333;
+    padding: 1.2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
 
-    nav a:hover {
-      color: #00ffcc;
-    }
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #B8860B; /* coral */
+}
 
-    .hero {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background: linear-gradient(135deg, #0f0f0f 60%, #00ffcc33);
-      padding: 2rem;
-      text-align: center;
-    }
+/* NAV */
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #F2F2F2;
+    font-weight: 400;
+    transition: 0.3s;
+}
 
-    .hero .content {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      gap: 2rem;
-    }
+nav a:hover {
+    color: #B8860B; /* coral */
+}
 
-    .hero .content .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid #00ffcc;
-    }
+/* HERO SECTION */
+.hero {
+    padding: 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .hero h2 {
-      font-size: 2.5rem;
-      font-weight: 600;
-    }
+.hero .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    padding: 2.5rem 3rem;
+    border-radius: 20px;
+    background: #04372b;
+    border: 1px solid #333;
+    transition: 0.3s ease;
+}
 
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 1rem 0;
-    }
+/* PROFILE PIC */
+.profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #B8860B; /* coral */
+}
 
-    .hero button {
-      background: #00ffcc;
-      color: #0f0f0f;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background 0.3s ease;
-    }
+/* TEXT ANIMATION */
+@keyframes slideFade {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
 
-    .hero button:hover {
-      background: #00ddb0;
-    }
+.hero h2 {
+    font-size: 2.5rem;
+    color: #B8860B; /* coral title */
+    font-weight: 600;
+    animation: slideFade 1.2s ease forwards;
+}
 
-    section {
-      padding: 4rem 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
+.hero p {
+    margin-top: 0.6rem;
+    max-width: 600px;
+    font-size: 1.1rem;
+    color: #E6E6E6;
+    animation: slideFade 1.6s ease forwards;
+}
 
-    footer {
-      background: #111;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #777;
-    }
-  </style>
+/* BUTTON */
+.hero button {
+    margin-top: 1.5rem;
+    background: #B8860B;
+    color: #0D0D0D;
+    border: none;
+    padding: 0.9rem 1.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s;
+    animation: slideFade 2s ease forwards;
+}
+
+.hero button:hover {
+    background: #B8860B; /* deeper coral */
+}
+
+/* SECTION */
+section {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #B8860B; /* coral */
+    margin-bottom: 1rem;
+}
+
+#about {
+    background: #1A1A1A;
+    padding: 3rem;
+    border-radius: 12px;
+    border-left: 5px solid #B8860B; /* coral accent */
+    color: #E6E6E6;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+}
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Arjuna Sri</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Arjuna Sri</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <div class="content">
-      <!-- Profile Picture to the side of name -->
-      <img src="arjuna.jpg" alt="Arjuna Sri" class="profile-pic" />
-      <div>
-        <h2>Hi, I'm Arjuna Sri</h2>
-        <p>I'm an <b>AI & Data Science engineer</b> with diverse technical skills and the founder of a tech company, <b>BLOCK ROCK</b>.</p>
-        <button onclick="document.getElementById('projects').scrollIntoView({behavior: 'smooth'})">View My Work</button>
-      </div>
+<section class="hero">
+  <div class="content">
+    <img src="arjuna.jpg" alt="Arjuna Sri" class="profile-pic" />
+    <div>
+      <h2>Hi, I'm Arjuna Sri</h2>
+      <p>I am an <b>AI & Data Science Engineer</b> and founder of <b>BLOCK ROCK</b>, with a strong interest in AI development, blockchain, and intelligent systems.</p>
+      <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">View My Work</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I'm an <b>AI & Data Science engineer</b> with a passion for web development, options trading, cybersecurity, and blockchain. I founded <b>BLOCK ROCK</b>, a software startup that offers technical training. I code in C, Python, Java, HTML, and CSS, and I’m always learning — especially through books and hands-on projects.</p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I’m passionate about AI, data science, cybersecurity, trading analytics, and product building. As the founder of <b>BLOCK ROCK</b>, I train learners in technical skills while building meaningful software projects.</p>
+</section>
 
-  
-    
-
-  <footer>
-    <p>&copy; 2025 Arjuna Sri. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Arjuna Sri. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
